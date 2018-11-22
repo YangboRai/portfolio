@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fictional company</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:600,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body>
+
+
+<!--------------------------------------------------------------------------------
+									Header
+	------------------------------------------------------------------------------>
+
+<div class="container">
+
+	<header>
+		<div id="menu"></div>
+		<div id="search-box"><img src="images/search-icon.png"></div>
+		<div class="company-logo">
+			<img id="logo" src="images/logo.png">
+		</div>
+
+		<nav>
+
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">OUR STORY</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">LOCATION</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<input class="search" type="text" name="search" placeholder="SEARCH">
+			</ul>
+		</nav>
+
+		<div class="nav-break"></div>
+
+	</header>
+
+<!--------------------------------------------------------------------------------
+									SLIDESHOW BODY
+	------------------------------------------------------------------------------>
+
+	<div id="slideshow">
+
+			<div id="imageSlider">
+
+			 	<span class="dot" onclick="img(1)"></span>
+				<span class="dot" onclick="img(2)"></span>
+				<span class="dot" onclick="img(3)"></span>
+				<span class="dot" onclick="img(4)"></span>
+			</div>
+			
+
+			<div class="slideshow-headline-wrapper">
+				<div class="slideshow-headline">
+
+					<h2>SLIDESHOW HEADLINE</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. </p> 
+
+					<input type="button" value="LEARN MORE"></input>
+
+				</div>
+
+			</div>
+
+<!--------------------------------------------------------------------------------
+									FORM
+	------------------------------------------------------------------------------>
+
+		<form>
+
+			<div class="inner-form">
+
+				<p>I usually:</p>
+
+				<select>
+					<option>Shop once a week</option>
+				</select>	
+
+				<br>
+				
+				<p>I spend:</p>
+
+				<div class="radio-button">
+
+					<input class="active" type="button" name="" value="£40">
+					<input type="button" name="" value="£60">
+					<input type="button" name="" value="More">
+				</div>
+				
+
+
+				<p>where do you shop?</p>
+
+				<select id="mySelect" onchange="testValue()">
+					<option value="opt1">Option1</option>	
+					<option value="Other">Other</option>
+				</select>
+
+				<input id="shopOther" type="text"  placeholder="     Enter shop name">
+
+
+				<div class="checkbox">
+					<input type="checkbox" name="">
+					<p> I agree with <a href="#">terms and conditions.</a></p>
+				</div>
+
+
+				<button class="offer-btn">SEND ME OFFERS</button>
+
+			</div>
+			
+
+		</form>
+	
+
+	</div>
+
+<!--------------------------------------------------------------------------------
+									SERVICES
+	------------------------------------------------------------------------------>
+
+	<div id="services">
+		<div class="service-header1">
+			<h2>SERVICE HEADER 1</h2>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+			<br>
+			<br>
+			<hr>
+			<button>LEARN MORE</button>
+		</div>
+
+		<div class="service-header2">
+			<h2>SERVICE HEADER 1</h2>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+			<br>
+			<br>
+			<hr>
+			<button>LEARN MORE</button>
+		</div>
+
+
+		<div class="service-header3">
+			<h2>SERVICE HEADER 1</h2>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+			<br>
+			<br>
+			<hr>
+			<button>LEARN MORE</button>
+		</div>
+
+			<div class="page-slider">
+			<span id="dot1" class="page-dot" ></span>
+			<span id="dot2" class="page-dot" ></span>
+			<span id="dot3" class="page-dot"  ></span>
+		</div>
+
+	</div>
+
+	<!--------------------------------------------------------------------------------
+									SERVICES END
+	------------------------------------------------------------------------------>
+
+
+</div>
+	
+	<!--------------------------------------------------------------------------------
+									FOOTER
+	------------------------------------------------------------------------------>
+
+<footer>
+
+	<div class="footer-inner">	
+
+		<div class="col1">
+			<img id="logo" src="images/footerlogo.png">
+			<p>Copyright 2018 &copy; Some Company Ltd. </p>
+		</div>
+
+		<div class="col2">
+			<h3>SOCIAL</h3>
+			<br>
+			<ul>
+				<li class="fbook"><img src="images/facebook.png"></li>
+				<li class="twitter"><img src="images/twitter.png"></li>
+				<li class="instagram"><img src="images/instagram.png"></li>
+
+			</ul>
+		</div>
+
+		<div class="col3">
+			<h3>USEFUL LINKS</h3>
+			<br>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Cookie Policy</a></li>
+				<li><a href="#">Terms & conditions</a></li>
+			</ul>
+			
+		</div>
+	
+	</div>	
+
+</footer>
+
+<!--------------------------------------------------------------------------------
+									FOOTER END
+	------------------------------------------------------------------------------>
+</body>
+</html>
